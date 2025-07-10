@@ -1,4 +1,15 @@
-<div>{% if heading_title %}
-  <h2>{{ heading_title }}</h2>
-  {% endif %}
-  {{ code }}</div>
+<div>
+  <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 5px; padding: 15px; background: #f8f8f8;">
+      <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Код:</div>
+      <pre style="margin: 0; padding: 10px; background: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; overflow: auto;">
+      {{ code }}
+    </div>
+    <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 5px; padding: 15px; background: #f8f8f8;">
+      <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Результат:</div>
+      <div style="padding: 10px; background: white; border: 1px solid #ccc; border-radius: 4px; min-height: 100px;">
+        {{ result }}
+      </div>
+    </div>
+  </div>
+</div>
